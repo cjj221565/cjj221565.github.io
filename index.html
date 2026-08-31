@@ -1,45 +1,122 @@
 <!DOCTYPE html>
-<html lang="zh‑CN">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF‑8">
-    <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人简历｜云计算运维工程师</title>
     <style>
-        *{margin:0;padding:0;box‑sizing:border‑box;}
-        body{font‑family:"Microsoft Yahei",sans‑serif;background:#f5f7fa;color:#333;line‑height:1.7;padding:40px;max‑width:900px;margin:0 auto;background‑color:#ffffff;}
-        h1{text‑align:center;color:#2c3e50;margin‑bottom:30px;border‑bottom:2px solid #3498db;padding‑bottom:10px;}
-        h2{color:#2980b9;margin‑top:25px;margin‑bottom:12px;border‑left:4px solid #3498db;padding‑left:10px;}
-        ul{padding‑left:22px;margin‑bottom:10px;}
-        .info{text‑align:center;margin‑bottom:30px;color:#555;}
-        a{color:#2980b9;text‑decoration:none;}
-        a:hover{text‑decoration:underline;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg,#e8f4ff,#f0f8ff);
+            padding:40px 20px;
+            color:#2c3e50;
+        }
+        .container {
+            max-width:900px;
+            margin:0 auto;
+        }
+        .card {
+            background:#ffffff;
+            border-radius:16px;
+            box-shadow: 0 4px 16px rgba(0,80,160,0.1);
+            padding:30px;
+            margin-bottom:24px;
+            transition: 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow:0 8px 24px rgba(0,80,160,0.15);
+        }
+        .header-box {
+            text-align:center;
+        }
+        .avatar {
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            object-fit:cover;
+            border:4px solid #409eff;
+            margin-bottom:16px;
+        }
+        h1 {
+            font-size:36px;
+            color:#1f2937;
+            margin-bottom:8px;
+        }
+        .sub-title {
+            font-size:18px;
+            color:#475569;
+            margin-bottom:6px;
+        }
+        h2 {
+            color:#2b7cd3;
+            font-size:24px;
+            margin-bottom:16px;
+            border-left:5px solid #2b7cd3;
+            padding-left:12px;
+        }
+        ul {
+            padding-left:24px;
+        }
+        li {
+            font-size:17px;
+            line-height:1.8;
+            margin-bottom:8px;
+        }
+        a {
+            color:#2b7cd3;
+            text-decoration:none;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+        .self-eval {
+            line-height:1.8;
+            font-size:17px;
+        }
     </style>
 </head>
 <body>
-    <h1>个人简历</h1>
-    <div class="info">
-        <p>求职意向：云计算运维工程师</p>
-        <p>学历：东营职业学院｜云计算技术应用 专科</p>
+<div class="container">
+    <div class="card header-box">
+        <!-- 头像位置，把 src="" 引号里替换成图片链接就可以显示头像 -->
+        <img class="avatar" src="" alt="头像">
+        <h1>个人简历</h1>
+        <div class="sub-title">求职意向：云计算运维工程师</div>
+        <div class="sub-title">学历：东营职业学院｜云计算技术应用 专科</div>
     </div>
 
-    <h2>技能栈</h2>
-    <ul>
-        <li>Linux：常用命令、权限管理、磁盘、进程管理，Shell脚本编写</li>
-        <li>虚拟化：Ubuntu虚拟机部署、故障排查调试</li>
-        <li>版本控制：Git、GitHub，GitHub‑Pages网站部署</li>
-        <li>数据库：MySQL基础操作</li>
-        <li>容器：Docker基础，自定义镜像构建练习</li>
-        <li>备考：阿里云ACA认证</li>
-    </ul>
+    <div class="card">
+        <h2>技能栈</h2>
+        <ul>
+            <li>Linux：常用命令、权限管理、磁盘、进程管理，Shell脚本编写</li>
+            <li>虚拟化：Ubuntu虚拟机部署、故障排查调试</li>
+            <li>版本控制：Git、GitHub，GitHub‑Pages网站部署</li>
+            <li>数据库：MySQL基础操作</li>
+            <li>容器：Docker基础，自定义镜像构建练习</li>
+        </ul>
+    </div>
 
-    <h2>GitHub项目仓库</h2>
-    <ul>
-        <li><a href="https://github.com/cjj221565/linux‑study‑notes">linux‑study‑notes</a>：Linux学习笔记、问题复盘</li>
-        <li><a href="https://github.com/cjj221565/shell‑practice">shell‑practice</a>：Shell脚本练习仓库</li>
-        <li><a href="https://github.com/cjj221565/imagebuild">imagebuild</a>：Docker镜像构建练习</li>
-    </ul>
+    <div class="card">
+        <h2>GitHub项目仓库</h2>
+        <ul>
+            <li><a href="https://github.com/cjj221565/linux-study-notes">linux-study-notes</a>：Linux学习笔记、问题复盘</li>
+            <li><a href="https://github.com/cjj221565/shell-practice">shell-practice</a>：Shell脚本练习仓库</li>
+            <li><a href="https://github.com/cjj221565/imagebuild">imagebuild</a>：Docker镜像构建练习</li>
+        </ul>
+    </div>
 
-    <h2>自我评价</h2>
-    <p>自学云计算运维全套知识，坚持做学习笔记复盘，熟悉Git版本管理，动手实践部署GitHub‑Pages。目标从事云计算运维岗位，愿意持续学习成长。</p>
+    <div class="card">
+        <h2>自我评价</h2>
+        <p class="self-eval">
+            自学云计算运维全套知识，坚持做学习笔记复盘，熟悉Git版本管理，动手实践部署GitHub‑Pages。目标从事云计算运维岗位，愿意持续学习成长。
+        </p>
+    </div>
+</div>
 </body>
 </html>
